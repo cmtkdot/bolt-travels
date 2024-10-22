@@ -1,0 +1,217 @@
+TRAVEL-APP
+├── src
+│  ├── app
+│  │  ├── actions
+│  │  │  └── tripActions.ts
+│  │  ├── activity
+│  │  │  ├── [id]
+│  │  │  │  └── page.tsx
+│  │  │  └── page.tsx
+│  │  ├── activity-recommendations
+│  │  │  └── page.tsx
+│  │  ├── api
+│  │  │  ├── chatbot.ts
+│  │  │  ├── documents
+│  │  │  │  └── process
+│  │  │  │    └── route.ts
+│  │  │  ├── generate-travel-tips
+│  │  │  │  └── route.ts
+│  │  │  ├── getActivities
+│  │  │  │  └── route.ts
+│  │  │  ├── getTripData
+│  │  │  │  └── route.ts
+│  │  │  ├── pdf
+│  │  │  │  └── process
+│  │  │  │    └── route.ts
+│  │  │  ├── process-pdf
+│  │  │  │  └── route.ts
+│  │  │  ├── recommend-activities
+│  │  │  │  └── route.ts
+│  │  │  ├── saveTrip
+│  │  │  │  └── route.ts
+│  │  │  └── weather
+│  │  │    └── route.ts
+│  │  ├── auth
+│  │  │  ├── login
+│  │  │  └── page.tsx
+│  │  ├── currency
+│  │  │  └── page.tsx
+│  │  ├── dashboard
+│  │  │  ├── DashboardClient.tsx
+│  │  │  ├── layout.tsx
+│  │  │  └── page.tsx
+│  │  ├── favicon.ico
+│  │  ├── fonts
+│  │  │  ├── GeistMonoVF.woff
+│  │  │  └── GeistVF.woff
+│  │  ├── forgot-password
+│  │  │  └── page.tsx
+│  │  ├── globals.css
+│  │  ├── itinerary
+│  │  │  ├── [viewType]
+│  │  │  │  ├── layout.tsx
+│  │  │  │  └── page.tsx
+│  │  │  ├── page.tsx
+│  │  │  └── WeatherWidget.tsx
+│  │  ├── layout.tsx
+│  │  ├── login
+│  │  │  └── page.tsx
+│  │  ├── page.tsx
+│  │  ├── profile
+│  │  │  └── page.tsx
+│  │  ├── signup
+│  │  │  └── page.tsx
+│  │  ├── trips
+│  │  │  ├── [id]
+│  │  │  │  ├── edit
+│  │  │  │  │  └── page.tsx
+│  │  │  │  └── page.tsx
+│  │  │  ├── id_temp
+│  │  │  │  └── page.tsx
+│  │  │  ├── new
+│  │  │  │  └── page.tsx
+│  │  │  └── page.tsx
+│  │  └── weather
+│  │    └── page.tsx
+│  ├── components
+│  │  ├── accommodation
+│  │  │  ├── HotelForm.tsx
+│  │  │  └── HotelManager.tsx
+│  │  ├── activities
+│  │  │  ├── ActivityForm.tsx
+│  │  │  ├── ActivityList.tsx
+│  │  │  ├── ActivityManager.tsx
+│  │  │  ├── ActivityOverview.tsx
+│  │  │  └── ActivityPage.tsx
+│  │  ├── activity-recommendations
+│  │  │  ├── ActivityRecommendations.tsx
+│  │  │  └── ActivityRecommendationsContext.tsx
+│  │  ├── analytics
+│  │  │  └── TravelStats.tsx
+│  │  ├── auth
+│  │  │  ├── AuthForm.tsx
+│  │  │  ├── ForgotPasswordForm.tsx
+│  │  │  ├── LoginForm.tsx
+│  │  │  └── SignUpForm.tsx
+│  │  ├── budget
+│  │  │  ├── BudgetOverview.tsx
+│  │  │  └── BudgetTracker.tsx
+│  │  ├── chat
+│  │  │  ├── AIChat.tsx
+│  │  │  └── ChatbotComponent.tsx
+│  │  ├── dashboard
+│  │  │  └── DashboardOverview.tsx
+│  │  ├── ErrorBoundary.tsx
+│  │  ├── itinerary
+│  │  │  ├── ActivityCard.tsx
+│  │  │  ├── ActivityForm.tsx
+│  │  │  ├── AddActivityForm.tsx
+│  │  │  ├── DailyView.tsx
+│  │  │  ├── EnhancedItineraryView.tsx
+│  │  │  ├── FullTripView.tsx
+│  │  │  └── WeeklyView.tsx
+│  │  ├── layout
+│  │  │  ├── AuthLayout.tsx
+│  │  │  └── Layout.tsx
+│  │  ├── map
+│  │  │  ├── GoogleMap.tsx
+│  │  │  ├── MapComponent.tsx
+│  │  │  ├── MapView.tsx
+│  │  │  └── SimpleMap.tsx
+│  │  ├── navigation
+│  │  │  ├── Navigation.tsx
+│  │  │  └── ResponsiveNav.tsx
+│  │  ├── trip
+│  │  │  ├── EditTripForm.tsx
+│  │  │  ├── NewTripForm.tsx
+│  │  │  ├── TripDetails.tsx
+│  │  │  ├── TripForm.tsx
+│  │  │  ├── TripItinerary.tsx
+│  │  │  ├── TripList.tsx
+│  │  │  ├── TripTravelTips.tsx
+│  │  │  └── TripView.tsx
+│  │  ├── trips
+│  │  │  └── TripDetails.tsx
+│  │  ├── ui
+│  │  │  ├── accordion.tsx
+│  │  │  ├── alert.tsx
+│  │  │  ├── avatar.tsx
+│  │  │  ├── badge.tsx
+│  │  │  ├── button.tsx
+│  │  │  ├── calendar.tsx
+│  │  │  ├── card.tsx
+│  │  │  ├── checkbox.tsx
+│  │  │  ├── dialog.tsx
+│  │  │  ├── dropdown-menu.tsx
+│  │  │  ├── form.tsx
+│  │  │  ├── input.tsx
+│  │  │  ├── label.tsx
+│  │  │  ├── progress.tsx
+│  │  │  ├── scroll-area.tsx
+│  │  │  ├── select.tsx
+│  │  │  ├── sheet.tsx
+│  │  │  ├── skeleton.tsx
+│  │  │  ├── spinner.tsx
+│  │  │  ├── tabs.tsx
+│  │  │  ├── textarea.tsx
+│  │  │  ├── ThemeToggle.tsx
+│  │  │  ├── toast.tsx
+│  │  │  ├── toaster.tsx
+│  │  │  ├── toggle-group.tsx
+│  │  │  ├── toggle.tsx
+│  │  │  └── use-toast.tsx
+│  │  ├── utils
+│  │  │  ├── CurrencyConverter.tsx
+│  │  │  ├── DocumentUploader.tsx
+│  │  │  ├── ErrorBoundary.tsx
+│  │  │  ├── LocationAutocomplete.tsx
+│  │  │  ├── PackingList.tsx
+│  │  │  └── PdfUploadProcessor.tsx
+│  │  ├── weather
+│  │  │  ├── WeatherComponent.tsx
+│  │  │  └── WeatherWidget.tsx
+│  │  └── WeatherComponent.tsx
+│  ├── constants
+│  │  └── app-constants.ts
+│  ├── context
+│  │  ├── auth-context.tsx
+│  │  ├── TripContext.tsx
+│  │  └── UserContext.tsx
+│  ├── contexts
+│  │  ├── auth-context.tsx
+│  │  ├── TripContext.tsx
+│  │  └── UserContext.tsx
+│  ├── hooks
+│  │  ├── useActivities.ts
+│  │  ├── useItineraries.ts
+│  │  ├── useToast.ts
+│  │  └── useTrips.ts
+│  ├── lib
+│  │  ├── api.ts
+│  │  ├── auth.ts
+│  │  ├── database.types.ts
+│  │  ├── supabase-client.ts
+│  │  ├── supabase.ts
+│  │  ├── types.ts
+│  │  └── utils.ts
+│  ├── logo.png
+│  ├── middleware.ts
+│  ├── migrations
+│  ├── scripts
+│  │  └── add-vietnam-trip.ts
+│  ├── store
+│  │  └── index.ts
+│  ├── styles
+│  │  └── globals.css
+│  ├── tree
+│  ├── types
+│  │  └── activity.ts
+│  └── utils
+│    ├── currencyUtils.ts
+│    └── dateUtils.ts
+├── tailwind.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── tsconfig.tsbuildinfo
+├── tsconfig.typedoc.json
+└── typedoc.json
